@@ -8,6 +8,7 @@ const Homepage = () => {
   const sectionPath=["world","us","science","art"]
   return (
     <div className=" w-full">
+     
       {<NewsCards section={"home"} />}
       <div>
         <div>{<SectionNewsCard section={"home"} sectionPath={sectionPath}/>}</div>

@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
 
-const MainNewsCard = ({data}) => {
+const MainNewsCard = ({ data, section }) => {
+  const [isDetail, setIsDetail] = useState(false);
+  const id = data?.results[0].id;
+  const item = data?.results[0];
+  const nav = useNavigate();
+  const detailHandle = () => {
+    nav(`/${id}`, { state: { section, item } });
+    setIsDetail(true);
+  };
   return (
     <div className="">
+      {isDetail && (
+        <>
+          <Outlet />
+        </>
+      )}
       <div className="flex justify-center w-full">
         <div className="relative ">
           <img src={data?.results[0].multimedia[1].url} alt="" />
@@ -18,7 +32,10 @@ const MainNewsCard = ({data}) => {
           <p className="line-clamp-3">{data?.results[0].abstract}</p>
         </div>
         <div>
-          <button className=" bg-gray-800 text-white px-2 py-2 rounded-lg">
+          <button
+            onClick={detailHandle}
+            className=" bg-gray-800 text-white px-2 py-2 rounded-lg"
+          >
             Read more
           </button>
         </div>

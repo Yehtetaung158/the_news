@@ -28,7 +28,7 @@ const NewsCards = ({ section }) => {
         data && (
           <div className="flex gap-2">
             <div className="w-3/4 border-r-2 border-black pr-2">
-              <MainNewsCard data={data} />
+              <MainNewsCard data={data} section={section}/>
             </div>
             <div className="w-1/4">
               <SideNews data={data.results} />
