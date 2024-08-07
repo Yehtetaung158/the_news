@@ -4,8 +4,6 @@ import { useNavigate, Outlet } from "react-router-dom";
 const SectionMainNewsCard = ({ news }) => {
   const [isDetail, setIsDetail] = useState(false);
   const nav = useNavigate();
-  console.log("news", news);
-
   const showedNews = news.slice(0, 3);
 
   return (
