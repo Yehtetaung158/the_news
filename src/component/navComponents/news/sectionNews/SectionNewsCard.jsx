@@ -49,7 +49,7 @@ const SectionNewsCard = ({ section, sectionPath }) => {
                 <div
                   className={` flex flex-col gap-2 ${
                     opinion?.length > 0 && "w-3/4"
-                  } px-2 py-2 max-[500px]:border-r-0 border-r-2 border-black max-[500px]:w-full`}
+                  } px-2 max-[500px]:px-0 py-2 max-[500px]:border-r-0 border-r-2 border-black max-[500px]:w-full`}
                 >
                   {newsBySection &&
                     Object.entries(newsBySection).map(([section, i]) => (
