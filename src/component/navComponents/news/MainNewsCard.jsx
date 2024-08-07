@@ -18,8 +18,8 @@ const MainNewsCard = ({ data, section }) => {
         </>
       )}
       <div className="flex justify-center w-full">
-        <div className="relative ">
-          <img src={data?.results[0].multimedia[1].url} alt="" />
+        <div className="relative  min-h-48">
+          <img className=" min-h-full" src={data?.results[0].multimedia[1].url} alt="" />
           <div className=" absolute bottom-2 left-0 text-white">
             <h1 className=" px-2 text-xl font-bold">
               {data?.results[0].title}

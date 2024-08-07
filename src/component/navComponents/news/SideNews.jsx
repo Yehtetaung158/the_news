@@ -19,7 +19,7 @@ const SideNews = ({ data }) => {
             }}
             key={index}
           >
-            <div className="relative">
+            <div className="relative clear-start min-h-20">
               {item?.multimedia?.[0] && (
                 <img
                   src={item.multimedia[0].url}

@@ -1,15 +1,20 @@
 import React from "react";
 
-const Error = ({refetch}) => {
-    const reFetchHandler = () => {
-        refetch()
-      };
+const Error = ({ refetch }) => {
+  const reFetchHandler = () => {
+    refetch();
+  };
   return (
     <>
       <div className="  w-[250px] h-screen mx-auto my-auto flex flex-col items-center justify-center">
-        <div className="bg-gray-300 flex flex-col gap-2 items-center justify-center rounded-lg py-2 px-2 ">
-          <h1>Error</h1>
+        <div className="bg-gray-300 flex flex-col gap-2 items-center justify-center rounded-lg py-2 px-2 text-sm">
+          <h1>Error!!</h1>
           <p>Somethings is wrong!</p>
+          <div>
+            <p className=" h-full w-full text-xs">
+              မြန်မာနိုင်ငံမှာဆိုလျှင်vpnချိတ်ဆက်သင့်သည်
+            </p>
+          </div>
           <button
             className=" flex gap-2 items-center justify-center"
             onClick={reFetchHandler}
