@@ -15,7 +15,7 @@ const ScienceNewsPage = () => {
         </div>
       </div>
       <div className="  bg-white dark:bg-gray-700">
-        {<AllNewCard section={"home"} />}
+        {<AllNewCard section={"science"} />}
       </div>
       <div className=" bg-gray-200 dark:bg-gray-800">{<Footer />}</div>
     </div>

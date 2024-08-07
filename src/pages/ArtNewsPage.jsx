@@ -13,7 +13,7 @@ const ArtNewsPage = () => {
         <div>{<SectionNewsCard section={"arts"} sectionPath={sectionPath}/>}</div>
       </div>
       <div className="  bg-white dark:bg-gray-700">
-        {<AllNewCard section={"home"}/>}
+        {<AllNewCard section={"arts"}/>}
       </div>
       <div className=" bg-gray-200 dark:bg-gray-800">
         {<Footer/>}

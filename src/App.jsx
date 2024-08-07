@@ -11,21 +11,21 @@ import NewsDetailPage from "./pages/detail/NewsDetailPage";
 
 const App = () => {
   return (
-    <Container>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/:id" element={<NewsDetailPage />} />
-        <Route path="/worldnews" element={<WorldNewsPage />} />
-        <Route path="/worldnews/:id" element={<NewsDetailPage />} />
-        <Route path="/usnews" element={<UsNewsPage />} />
-        <Route path="/usnews/:id" element={<NewsDetailPage />} />
-        <Route path="/sciencenews" element={<ScienceNewsPage />} />
-        <Route path="/sciencenews/:id" element={<NewsDetailPage />} />
-        <Route path="/artnews" element={<ArtNewsPage />} />
-        <Route path="/artnews/:id" element={<NewsDetailPage />} />
-      </Routes>
-    </Container>
+      <Container>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/:id" element={<NewsDetailPage />} />
+          <Route path="/worldnews" element={<WorldNewsPage />} />
+          <Route path="/worldnews/:id" element={<NewsDetailPage />} />
+          <Route path="/usnews" element={<UsNewsPage />} />
+          <Route path="/usnews/:id" element={<NewsDetailPage />} />
+          <Route path="/sciencnews" element={<ScienceNewsPage />} />
+          <Route path="/sciencenews/:id" element={<NewsDetailPage />} />
+          <Route path="/artnews" element={<ArtNewsPage />} />
+          <Route path="/artnews/:id" element={<NewsDetailPage />} />
+        </Routes>
+      </Container>
   );
 };
 

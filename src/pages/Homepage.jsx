@@ -7,7 +7,7 @@ import Footer from "../component/navComponents/Footer";
 const Homepage = () => {
   const sectionPath=["world","us","science","art"]
   return (
-    <div className=" w-full">
+    <div className=" w-full overflow-hidden">
      
       {<NewsCards section={"home"} />}
       <div>
