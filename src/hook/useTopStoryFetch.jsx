@@ -2,7 +2,7 @@ import React from "react";
 import { useGetHomeQuery } from "../store/service/endpoint/topStoryEndpoint";
 
 const useTopStoryFetch = (section) => {
-  const { data, isError, isLoading } = useGetHomeQuery(section, {
+  const { data, isError, isLoading,refetch } = useGetHomeQuery(section, {
     skip: !section,
   });
   const item = data?.results?.map((item, index) => ({
@@ -13,6 +13,7 @@ const useTopStoryFetch = (section) => {
     data: { ...data, results: item },
     isError,
     isLoading,
+    refetch
   };
 };
 

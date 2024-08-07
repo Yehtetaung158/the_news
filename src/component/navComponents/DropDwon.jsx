@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 
 const DropDwon = () => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
-  console.log(isDropDownOpen);
   const mode = useSelector((state) => state.nav.mode);
   if (mode) {
     document.documentElement.classList.remove("dark");
