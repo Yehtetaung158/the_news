@@ -20,7 +20,7 @@ const Cover = () => {
         </div>
         <button
           onClick={refetch}
-          className="flex gap-2 justify-start items-center text-xs text-black dark:text-gray-200 dark:bg-gray-700 bg-gray-200 px-2 rounded-lg"
+          className="flex gap-2 justify-start items-center text-xs text-black dark:text-gray-200 dark:bg-gray-700 bg-gray-200 px-0.5 rounded-lg"
         >
           {isLoading ? (
             <h1>loading...</h1>
